@@ -13,7 +13,6 @@ public class matakuliahMain {
         System.out.println(mk3.display());
 
         System.out.println("--- NILAI IPK ---");
-        // Bagaimana Rumus IPK ?
-        // Rumus: (index nilai*sks) + (index nilai*sks) +..+ (index nilai*sks)/total_sks
+        
     }
 }
