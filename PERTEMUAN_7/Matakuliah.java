@@ -6,20 +6,74 @@ public class Matakuliah {
     private String index;
     private int sks;
 
-    public Matakuliah(String kode, String nama, String index, int sks) 
-    {
-        super();
+    public Matakuliah(String kode, String nama, String index, int sks) {
         this.kode = kode;
         this.nama = nama;
         this.index = index;
         this.sks = sks;
     }
 
-    public double nilaiIndex() 
-    {
-        // Berdasarkan index matakuliah
-        // A = 4, AB = 3.5, B = 3, BC = 2.5, C = 2, D = 1, E = 0
-        return 0;
+    public double nilaiIndex() {
+        double nilai = 0;
+        switch (index) {
+            case "A":
+                nilai = 4.0;
+                break;
+            case "AB":
+                nilai = 3.5;
+                break;
+            case "B":
+                nilai = 3.0;
+                break;
+            case "BC":
+                nilai = 2.5;
+                break;
+            case "C":
+                nilai = 2.0;
+                break;
+            case "D":
+                nilai = 1.0;
+                break;
+            case "E":
+                nilai = 0;
+                break;
+            default:
+                System.out.println("Tidak valid");
+        }
+        return nilai;
+    }
+
+    //Setter dan Getter
+    public int getSKS() {
+        return sks;
+    }
+
+    public void setSKS(int sks) {
+        this.sks = sks;
+    }
+
+    public String getIndex() {
+        return index;
+    }
+
+    public void setIndex(String index) {
+        this.index = index;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getKode() {
+        return kode;
+    }
+
+    public void setKode(String kode) {
+        this.kode = kode;
     }
 
     public String display() {
