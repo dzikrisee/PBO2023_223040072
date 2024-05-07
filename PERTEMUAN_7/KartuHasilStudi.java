@@ -8,14 +8,18 @@ public class KartuHasilStudi {
     private double ips;
     private List<Matakuliah> daftarMatakuliah;
 
-    public KartuHasilStudi(String semester){
+    public KartuHasilStudi(String semester)
+    {
         this.semester = semester;
         this.daftarMatakuliah = new ArrayList<>();
     }
+    
     public void addMatakuliah(Matakuliah Matakuliah){
         daftarMatakuliah.add(Matakuliah);
     }
-    public String display(){
+    
+    public String display()
+    {
         StringBuilder sb = new StringBuilder();
         for(Matakuliah mk : daftarMatakuliah){
             sb.append(mk.display());
